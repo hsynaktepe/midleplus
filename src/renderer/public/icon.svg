@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="midleLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66c0f4" />
+      <stop offset="100%" stop-color="#1999ff" />
+    </linearGradient>
+  </defs>
+  <rect x="7.5" y="2.5" width="12" height="16" rx="2" transform="rotate(12 13.5 10.5)" fill="#1e2c3d" stroke="#2a475e" stroke-width="1.2" />
+  <rect x="3" y="4" width="13" height="17" rx="2" fill="#171d25" stroke="url(#midleLogoGrad)" stroke-width="1.5" />
+  <path d="M9.5 9.5V15.5M6.5 12.5H12.5" stroke="url(#midleLogoGrad)" stroke-width="1.8" stroke-linecap="round" />
+</svg>

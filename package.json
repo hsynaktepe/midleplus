@@ -1,0 +1,122 @@
+{
+  "name": "midleplus",
+  "version": "1.0.0",
+  "description": "Next-Generation Hybrid Steam Trading Card Farming & Management Platform",
+  "main": "dist/main/index.js",
+  "scripts": {
+    "dev": "concurrently -k \"npm run dev:vite\" \"npm run dev:electron\"",
+    "dev:vite": "vite",
+    "dev:electron": "wait-on tcp:5173 && npm run build:main && electron .",
+    "build:renderer": "vite build",
+    "build:main": "tsc -p tsconfig.main.json",
+    "build": "npm run build:renderer && npm run build:main",
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "package": "npm run build && electron-builder"
+  },
+  "keywords": [
+    "steam",
+    "trading-cards",
+    "steam-trading-cards",
+    "card-farming",
+    "steam-card-farming",
+    "steam-idle",
+    "steam-farmer",
+    "idle-master",
+    "archisteamfarm",
+    "asf",
+    "steam-cards",
+    "steam-bot",
+    "steam-community",
+    "steam-market",
+    "market-automation",
+    "profit-finder",
+    "electron",
+    "react",
+    "typescript"
+  ],
+  "author": {
+    "name": "hsynaktepe",
+    "url": "https://github.com/hsynaktepe/midleplus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hsynaktepe/midleplus.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "qrcode": "^1.5.4",
+    "steam-totp": "^2.1.2",
+    "steam-user": "^5.0.12",
+    "steamcommunity": "^3.45.1"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^3.7.1",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^20.17.19",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "wait-on": "^8.0.2"
+  },
+  "overrides": {
+    "form-data": "^4.0.1",
+    "tar": "^7.5.3",
+    "builder-util-runtime": "^9.7.0",
+    "nth-check": "^2.1.1",
+    "tough-cookie": "^4.1.4",
+    "qs": "^6.13.0",
+    "protobufjs": "^7.2.5",
+    "adm-zip": "^0.6.1",
+    "image-size": "^2.0.3"
+  },
+  "build": {
+    "appId": "com.midleplus.app",
+    "productName": "Mega Idle Plus",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "build/icon.ico",
+      "package.json"
+    ],
+    "win": {
+      "sign": null,
+      "verifyUpdateCodeSignature": false,
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "shortcutName": "Mega Idle Plus",
+      "artifactName": "${productName}-Setup-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "${productName}-Portable-${version}.${ext}"
+    }
+  }
+}
