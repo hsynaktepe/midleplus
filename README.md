@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="#-english-overview--features">English</a> • <a href="#-türkçe-genel-bakış--özellikler">Türkçe</a>
+  <a href="#-english-overview--features">English</a> • <a href="#turkish">Türkçe</a>
 </p>
 
 <p align="center">
@@ -41,6 +41,22 @@
 </div>
 
 ---
+
+## 📥 Download & Quick Start
+
+Get the latest version of **Mega Idle Plus** for Windows (64-bit):
+
+[![Download Setup](https://img.shields.io/badge/Download-Installer_(.exe)-0078D7?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/hsynaktepe/midleplus/releases/latest/download/Mega.Idle.Plus-Setup-1.0.0.exe)
+[![Download Portable](https://img.shields.io/badge/Download-Portable_(.exe)-28A745?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/hsynaktepe/midleplus/releases/latest/download/Mega.Idle.Plus-Portable-1.0.0.exe)
+
+| Package | Format | Description |
+| :--- | :--- | :--- |
+| **Windows Installer** | `.exe` (Setup) | Standard installer with automatic shortcuts and uninstaller support. |
+| **Windows Portable** | `.exe` (Standalone) | Zero installation required. Plug-and-play directly from a USB drive or desktop. |
+
+> All releases are available on the [GitHub Releases Page](https://github.com/hsynaktepe/midleplus/releases/latest).
+
+
 
 ## 🌟 English Overview & Features
 
@@ -174,10 +190,25 @@ This software is developed for personal automation, educational, and research pu
 ================================================================================
 
 <br />
-
+<a id="turkish"></a>
 # ⚡ Mega Idle Plus (Midle+) v1.0 — Türkçe
 
 ---
+## 📥 İndirme ve Hızlı Başlangıç
+
+Windows (64-bit) için **Mega Idle Plus**'ın en güncel sürümünü hemen indirin:
+
+[![Kurulumlu İndir](https://img.shields.io/badge/İndir-Kurulumlu_(.exe)-0078D7?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/hsynaktepe/midleplus/releases/latest/download/Mega.Idle.Plus-Setup-1.0.0.exe)
+[![Taşınabilir İndir](https://img.shields.io/badge/İndir-Taşınabilir_(.exe)-28A745?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/hsynaktepe/midleplus/releases/latest/download/Mega.Idle.Plus-Portable-1.0.0.exe)
+
+| Paket Türü | Format | Açıklama |
+| :--- | :--- | :--- |
+| **Windows Kurulum Sihirbazı** | `.exe` (Setup) | Masaüstü kısayolları ve Denetim Masası kaldırma desteği olan standart kurulum. |
+| **Taşınabilir (Portable)** | `.exe` (Bağımsız) | Kurulum gerektirmez. İndirip doğrudan flash bellekten veya klasörden çalıştırın. |
+
+> Tüm geçmiş ve güncel sürümler için [GitHub Sürümler Sayfası](https://github.com/hsynaktepe/midleplus/releases/latest)'nı ziyaret edebilirsiniz.
+
+
 
 ## 🌟 Türkçe Genel Bakış & Özellikler
 
